@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Library</title>
+
+    <link rel="stylesheet" href="library.css" />
+    <script src="library.js" defer></script>
+  </head>
+  <body>
+      <header>
+        <p>Library</p>
+      </header>
+      <div id="overlay"></div>
+      <div class="main">
+        <div class="cards" id="cards">
+          <div class="card">
+            <div class="title">
+              <h2>Title</h2>
+              <p>Author</p>
+              <hr>
+            </div>
+            <div class="book-content">
+              <p>book content</p>
+            </div>
+            <div class="button-block">
+                <button class="delete">Delete</button>
+                <button class="update">Read</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">
+              <h2>Title</h2>
+              <p>Author</p>
+              <hr>
+            </div>
+            <div class="book-content">
+              <p>book content</p>
+            </div>
+
+            <div class="card-footer">
+              <div class="read">
+                <p>Currently Reading</p>
+              </div>
+              <div class="button-block">
+                <button class="delete">Delete</button>
+                <button class="update">Edit</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="book-form" id="book-form">
+        <form id="form-content" class="form-content">
+            <h2>Add New Book</h2>
+            <hr>
+            <label for="title">Title</label>
+            <input type="text" placeholder="Enter book title" name="title" required>
+
+
+            <label for="author">Author</label>
+            <input type="text" placeholder="Enter Author Name" name="author" required>
+
+            <label for="synopsis">Synopsis</label>
+            <textarea placeholder="Movie Description" name="synopsis"></textarea>
+            
+            <label for="read">Completed: </label>
+            <select name="read" required>
+              <option value="Plan To Read">Plan To Read</option>
+              <option value="Currently Reading">Currently Reading</option>
+              <option value="Completed">Completed</option>
+              <option value="Dropped">Dropped</option>
+            </select>
+            <!-- <input type="checkbox" name="checkbox" value="read" id="completed"> -->
+            <div class="btn-container">
+                <button type="button" class="btn cancel" onclick="closeForm()">Cancel</button>
+                <button type="submit" id="submit-btn" class="btn">Submit</button>
+            </div>
+        </form>
+      </div>
+        <button id="add-button">+</button>
+      <footer>
+        <p>by this dude</p>
+      </footer>
+    </div>
+  </body>
+</html>
