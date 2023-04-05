@@ -7,11 +7,13 @@ const overlay = document.getElementById("overlay");
 
 let myLibrary = [];
 
-function Book(title, author, synopsis, read) {
-    this.title = title;
-    this.author = author;
-    this.synopsis = synopsis;
-    this.read = read;
+class Book {
+    constructor(title, author, synopsis, read) {
+        this.title = title;
+        this.author = author;
+        this.synopsis = synopsis;
+        this.read = read;
+    }
 }
 
 // Saving new book when submit clicked
